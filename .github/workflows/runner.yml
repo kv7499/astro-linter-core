@@ -36,6 +36,10 @@ jobs:
           OCI_FINGERPRINT: ${{ secrets.OCI_FINGERPRINT }}
           OCI_REGION: ${{ secrets.OCI_REGION }}
           OCI_KEY_CONTENT: ${{ secrets.OCI_KEY_CONTENT }}
+          OCI_AD_NAME: ${{ secrets.OCI_AD_NAME }}
+          OCI_SUBNET_ID: ${{ secrets.OCI_SUBNET_ID }}
+          OCI_IMAGE_ID: ${{ secrets.OCI_IMAGE_ID }}
+          OCI_SSH_PUB_KEY: ${{ secrets.OCI_SSH_PUB_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
