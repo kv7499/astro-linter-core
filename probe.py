@@ -83,8 +83,8 @@ def main():
     print(f"[{datetime.datetime.now()}] Initializing OCI Capacity Probe on GitHub Actions...")
     setup_oci_config()
 
-    # Perform up to 3 launch attempts per workflow execution
-    max_attempts = 3
+    # Perform 6 continuous launch attempts per workflow execution (~9.5 minutes of continuous polling)
+    max_attempts = 6
     for attempt in range(1, max_attempts + 1):
         print(f"[{datetime.datetime.now()}] Attempt {attempt}/{max_attempts}: Sending launch request to ap-hyderabad-1...")
         success, output = try_launch()
